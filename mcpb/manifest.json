@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.2",
+  "name": "logiccraft",
+  "version": "0.2.0",
+  "description": "Digital Logic Breadboard Simulator, Quine-McCluskey K-Map Synthesizer, Multi-Channel Logic Oscilloscope, 8-Bit ALU Lab, and Verilog-2001/VHDL Exporter",
+  "author": {
+    "name": "Sandra Schipal",
+    "url": "https://github.com/sandraschi/logiccraft"
+  },
+  "license": "MIT OR Apache-2.0",
+  "server": {
+    "type": "binary",
+    "entry_point": "logiccraft-mcp.exe",
+    "mcp_config": {
+      "command": "${__dirname}/logiccraft-mcp.exe",
+      "args": ["--mcp"]
+    }
+  }
+}

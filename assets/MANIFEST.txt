@@ -1,0 +1,2 @@
+# path min-bytes
+assets/logic.svg 300
