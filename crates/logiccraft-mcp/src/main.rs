@@ -179,8 +179,8 @@ pub fn handle_mcp_request(req: &Value, engine: &mut LogicEngine, db_path: &Path)
             "jsonrpc": "2.0",
             "id": req_id,
             "result": {
-                "protocolVersion": "2024-11-05",
-                "capabilities": { "tools": {} },
+                "protocolVersion": "2026-07-28",
+                "capabilities": { "tools": { "listChanged": false } },
                 "serverInfo": {
                     "name": "logiccraft-mcp",
                     "version": APP_VERSION

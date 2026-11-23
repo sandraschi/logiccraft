@@ -23,7 +23,7 @@ LogicCraft replaces heavyweight Java/Electron circuit simulators with a zero-dep
 | 8-Bit ALU (`Z/C/N/V` flags) & 4-Register CPU Datapath Workbench | `Implemented` | `logiccraft-core::model` |
 | Structural Verilog-2001, VHDL, Graphviz DOT & JSON Netlist Exporter | `Implemented` | `logiccraft-core` |
 | Bundled SQLite Persistence (`%LOCALAPPDATA%\logiccraft\logiccraft.db`) | `Implemented` | `logiccraft-core::db` |
-| CLI (`--json`) + MCP `2024-11-05` Stdio Server (`14` tools) | `Implemented` | `logiccraft-mcp` |
+| CLI (`--json`) + MCP `2026-07-28` Stdio Server (`14` tools) | `Implemented` | `logiccraft-mcp` |
 | Native `eframe`/`egui` 0.37 Studio (6 Workbenches, WCAG AAA Dark/Light) | `Implemented` | `logiccraft-app` |
 
 ## Quick Start

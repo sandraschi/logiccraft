@@ -975,31 +975,9 @@ impl LogicCraftApp {
         });
         ui.separator();
 
-        egui::ScrollArea::vertical().show(ui, |ui| match self.help_tab {
-            HelpTab::GetStarted => {
-                ui.label(HELP_MD);
-            }
-            HelpTab::BreadboardGates => {
-                ui.strong("Supported Digital Logic Primitives (45nm CMOS Characterization)");
-                ui.label("INPUT, OUTPUT, NOT (2T, 25ps), NAND/NOR (4T, 35ps), AND/OR (6T, 55ps), XOR/XNOR (12T, 85ps), DFF (20T, 120ps), CLOCK, SEG7.");
-            }
-            HelpTab::TruthTablesKMaps => {
-                ui.strong("Quine-McCluskey Prime-Implicant Minimization");
-                ui.label("Sweeps all 2^N input vectors (up to 8 variables = 256 minterms), combines adjacent Hamming-distance-1 implicants, and extracts an essential prime-implicant cover.");
-            }
-            HelpTab::AluTiming => {
-                ui.strong("8-Bit Two's-Complement ALU & Status Flags");
-                ui.label("Computes ADD, SUB, AND, OR, XOR, NOT A, SHL, SHR, CMP, and INC A with exact hardware Zero (Z), Carry/Borrow (C), Negative (N), and Signed Overflow (V) flags.");
-            }
-            HelpTab::CliMcp => {
-                ui.strong("14 MCP 2024-11-05 Tools & CLI Subcommands");
-                ui.monospace("logic_status, logic_summary, load_preset, add_gate, remove_gate, toggle_input, connect_wire, evaluate_circuit, step_clock, generate_truth_table, minimize_expression, simulate_timing, alu_execute, export_hdl");
-            }
-            HelpTab::TechnicalInfo => {
-                ui.strong("3-Tier Pure-Rust ArtCraft Architecture");
-                ui.label(format!("SQLite Database Path: {}", self.db_path.display()));
-                ui.label("L1: logiccraft-core | L2: logiccraft-mcp | L3: logiccraft-app (egui 0.37)");
-            }
+        egui::ScrollArea::vertical().show(ui, |ui| {
+            let _ = HELP_MD;
+            crate::help_docs::render_help_tab_content(self, ui);
         });
     }
 

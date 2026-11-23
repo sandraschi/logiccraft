@@ -31,7 +31,7 @@ logiccraft-mcp alu --op add --a 127 --b 1
 logiccraft-mcp export-hdl --format verilog
 ```
 
-### MCP Server (`2024-11-05` stdio)
+### MCP Server (`2026-07-28` stdio)
 ```powershell
 logiccraft-mcp --mcp
 ```
