@@ -1,6 +1,6 @@
 [package]
 name = "logiccraft-mcp"
-description = "L2 CLI and MCP 2024-11-05 stdio server for LogicCraft"
+description = "L2 CLI and MCP 2026-07-28 stdio server for LogicCraft"
 version.workspace = true
 edition.workspace = true
 license.workspace = true

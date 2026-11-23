@@ -4,7 +4,7 @@
 
 ## Overview
 
-LogicCraft replaces heavyweight Java/Electron circuit simulators with a zero-dependency native Rust desktop studio and MCP `2024-11-05` server. It bundles 6 hierarchical workbenches in one unified workspace:
+LogicCraft replaces heavyweight Java/Electron circuit simulators with a zero-dependency native Rust desktop studio and MCP `2026-07-28` server. It bundles 6 hierarchical workbenches in one unified workspace:
 
 1. **Breadboard Studio** -- interactive gate & wire canvas (`INPUT`, `OUTPUT`, `NOT`, `AND`, `OR`, `NAND`, `NOR`, `XOR`, `XNOR`, `DFF`, `CLOCK`, `SEG7`) with live glowing signal wires and 6 built-in presets (`half_adder`, `full_adder`, `sr_latch`, `mux_2to1`, `parity_4bit`, `counter_2bit`).
 2. **Truth Table & K-Map Lab** -- exhaustive truth-table sweep up to 8 inputs (256 rows) with automatic **Quine-McCluskey prime-implicant minimization**.
@@ -41,7 +41,7 @@ cargo run -p logiccraft-mcp -- truth-table
 cargo run -p logiccraft-mcp -- alu --op add --a 127 --b 1
 cargo run -p logiccraft-mcp -- export-hdl --format verilog
 
-# Run MCP 2024-11-05 stdio server
+# Run MCP 2026-07-28 stdio server
 cargo run -p logiccraft-mcp -- --mcp
 ```
 

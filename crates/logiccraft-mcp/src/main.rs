@@ -1,4 +1,4 @@
-//! LogicCraft L2 CLI & MCP `2024-11-05` stdio server.
+//! LogicCraft L2 CLI & MCP `2026-07-28` stdio server.
 #![forbid(unsafe_code)]
 
 use clap::{Parser, Subcommand};
@@ -22,7 +22,7 @@ pub struct Cli {
     #[arg(long, global = true)]
     pub db: Option<PathBuf>,
 
-    /// Launch MCP 2024-11-05 JSON-RPC server on stdio
+    /// Launch MCP 2026-07-28 JSON-RPC server on stdio
     #[arg(long, global = true, default_value_t = false)]
     pub mcp: bool,
 
@@ -32,7 +32,7 @@ pub struct Cli {
 
 #[derive(Debug, Subcommand)]
 pub enum CliSub {
-    /// Run MCP 2024-11-05 JSON-RPC server on stdio
+    /// Run MCP 2026-07-28 JSON-RPC server on stdio
     Mcp,
     /// Show LogicCraft engine status
     Status,
